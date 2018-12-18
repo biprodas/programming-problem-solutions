@@ -1,4 +1,4 @@
-# LightOJ Solutions
+# SPOJ Solutions
 
 This package contains my solutions to the problems in [**SPOJ**](https://www.spoj.com/). 
 

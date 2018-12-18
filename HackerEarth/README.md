@@ -1,4 +1,4 @@
-# LightOJ Solutions
+# HackerEarth Solutions
 
 This package contains my solutions to the problems in [**Hacker Earth**](https://www.hackerearth.com/). 
 

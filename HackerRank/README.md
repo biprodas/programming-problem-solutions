@@ -1,4 +1,4 @@
-# LightOJ Solutions
+# HackerRank Solutions
 
 This package contains my solutions to the problems in [**Hacker Rank**](http://hackerrank.com/). 
 

@@ -1,4 +1,4 @@
-# LightOJ Solutions
+# Codeforces Solutions
 
 This package contains my solutions to the problems in [**Codeforces**](http://codeforces.com/). 
 
