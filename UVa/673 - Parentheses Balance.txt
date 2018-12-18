@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+string checkBalance(string s) {
+    stack<char> st;
+    for(int i=0; s[i]; i++){
+        if(s[i]=='(' or s[i]=='[') st.push(s[i]);
+	    if(s[i]==')' or s[i]==']'){
+	        if(st.empty())  return "No";
+	        char ch= st.top();
+	        st.pop();
+	        if(abs(s[i]-ch)>2) return "No";
+	   }
+    }
+    return st.empty() ? "Yes" : "No";
+}
+
+int main(){
+    int n; string s;
+    cin>>n; cin.ignore();
+    while(n--){
+        getline(cin,s);
+        cout<<checkBalance(s)<<endl;
+    }
+    return 0;
+}
