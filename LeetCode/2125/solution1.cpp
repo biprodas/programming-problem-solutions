@@ -6,7 +6,8 @@ class Solution {
 
       for (const string& str : bank) {
         int cnt = calc(str);
-        if (cnt == 0) continue;
+        if (cnt == 0) 
+          continue;
         ans += cnt * pre;
         pre = cnt;
       }
