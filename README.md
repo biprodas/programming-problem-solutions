@@ -1,6 +1,8 @@
 # OJ-Solutions
 
-This package contains my solutions to the problems in different online-judges.
+This package contains my solutions to the programming problems in different online-judges.
+
+Here is a list of platforms that i have tried:
 
 - [x] [**UVa OJ**](https://uva.onlinejudge.org/)
 - [x] [**Project Euler**](https://projecteuler.net/)
@@ -12,7 +14,7 @@ This package contains my solutions to the problems in different online-judges.
 - [x] [**SPOJ**](https://www.spoj.com/)
 - [x] [**URI**](https://www.urionlinejudge.com.br/judge/en)
 
-The solutions are mostly programmed with `C++` and `Java`.
+The solutions are mostly programmed with `C`, `C++`, `Java` and `Python`.
 
 #### Warning!!!
 
@@ -25,5 +27,5 @@ Happy Coding... :)
 
 #### Authors
 
-**[Biprodas Roy](https://github.com/biprodas)**  
+**[Biprodas Roy](https://www.linkedin.com/in/biprodas-roy-940039172/)**  
  `Dept of CSE, JUST.`
