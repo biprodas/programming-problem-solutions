@@ -15,6 +15,7 @@ int call(int i, int w){
     ret2= call(i+1,w);
     return dp[pii(i,w)]=max(ret1,ret2);
 }
+
 int main(){
     //freopen("in.txt","r",stdin);
     scanf("%d%d",&cap,&n);

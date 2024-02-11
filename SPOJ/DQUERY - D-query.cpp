@@ -22,11 +22,13 @@ void add(int i){
     cnt[x]++;
     if(cnt[x] == 1) res++;
 }
+
 void remove(int i) {
     int x= ar[i];
     cnt[x]--;
     if(cnt[x] == 0) res--;
 }
+
 int main(){
     int n, Q, L, R;
     cin>>n;

@@ -7,8 +7,7 @@ struct info {
     i64 prop, sum;
 } tree[mx*3];
 
-void update(int node, int b, int e, int i, int j, i64 x)
-{
+void update(int node, int b, int e, int i, int j, i64 x){
     if (i > e || j < b)
         return;
     if (b >= i && e <= j){ //relevant node
@@ -23,8 +22,8 @@ void update(int node, int b, int e, int i, int j, i64 x)
     update(right, mid + 1, e, i, j, x);
     tree[node].sum = tree[left].sum + tree[right].sum + (e - b + 1) * tree[node].prop;
 }
-i64 query(int node, int b, int e, int i, int j, i64 carry)
-{
+
+i64 query(int node, int b, int e, int i, int j, i64 carry){
     if (i > e || j < b)
         return 0;
 
