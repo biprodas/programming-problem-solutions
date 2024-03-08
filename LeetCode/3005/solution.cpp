@@ -3,15 +3,17 @@ class Solution {
 public:
     int maxFrequencyElements(vector<int>& nums) {
         vector<int> freq(101, 0);
+        int mx = 0;
 
-        for(auto a: nums) freq[a]++;
-        sort(freq.rbegin(), freq.rend());
-
-        int ans = freq[0];
-        for(int i=1; i<freq.size(); i++){
-            if(freq[i]!=freq[i-1]) 
-                break;
-            ans += freq[i];
+        for(auto a: nums) {
+            freq[a]++;
+            mx = max(mx, freq[a]);
+        }
+        
+        int ans = 0;
+        for(int a: freq){
+            if(a==mx) 
+                ans += a;
         }
 
         return ans;
