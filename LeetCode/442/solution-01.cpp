@@ -5,13 +5,12 @@ class Solution {
 public:
     vector<int> findDuplicates(vector<int>& nums) {
         unordered_map<int, int> mp;
-        for(auto a: nums) mp[a]++;
-
         vector<int> ans;
-        for(auto entry: mp) {
-            if(entry.second==2){
-                ans.push_back(entry.first);
-            }
+        
+        for(auto a: nums) {
+            mp[a]++;
+            if(mp[a]==2) 
+                ans.push_back(a);
         }
 
         return ans;
