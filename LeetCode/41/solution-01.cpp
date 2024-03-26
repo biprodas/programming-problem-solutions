@@ -19,12 +19,14 @@ public:
             if(idx==n) idx = 0;
             if(nums[idx]>0){
                 nums[idx] = nums[idx] * -1;
-            }     
+            }    
         }
-        
-        for(int i=0; i<n; i++) {
-            if(nums[i]>0) return i ? i : n;
+
+        for(int i=1; i<n; i++) {
+            if(nums[i]>0) return i;
         }
+
+        if(nums[0]>0) return n;
 
         return n+1;
     }
