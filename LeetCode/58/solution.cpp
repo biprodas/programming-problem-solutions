@@ -1,4 +1,6 @@
 // 58. Length of Last Word
+// Time: O(n)
+// Space: O(1)
 class Solution {
 public:
     int lengthOfLastWord(string s) {
